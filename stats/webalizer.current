@@ -1,0 +1,386 @@
+# Webalizer V2.23-08 Incremental Data - 10/23/2021 04:10:18
+2021 10 23 4 10 18
+633 183 49 37 9 15 6461949 289 80 0 0 0
+1 1 102 1 23
+68 31 1605864 2 42 5 0 0
+33 21 1306065 1 25 2 0 0
+0 0 0 0 0 0 0 0
+80 18 345403 2 22 6 0 0
+158 28 494409 2 35 7 0 0
+46 8 122058 2 10 2 0 0
+2 1 3892 2 2 2 0 0
+45 19 411404 1 26 2 0 0
+14 4 75922 2 7 2 0 0
+7 3 28714 3 3 3 0 0
+1 0 344 1 1 1 0 0
+6 0 20770 6 6 6 0 0
+10 3 58983 1 4 1 0 0
+22 9 181062 1 12 3 0 0
+9 3 69027 4 7 4 0 0
+5 0 11128 5 5 5 0 0
+6 0 15764 6 6 6 0 0
+32 12 109129 4 17 4 0 0
+18 7 130076 4 12 5 0 0
+9 1 20523 3 4 3 0 0
+20 0 54581 5 20 5 0 0
+41 15 1391838 3 22 5 0 0
+1 0 4993 1 1 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+1 0 399 1 0 0
+0 0 0 0 0 0
+2 0 592 2 0 0
+2 0 5337 2 0 0
+4 0 10784 4 0 0
+2 0 9986 2 0 0
+1 0 344 1 0 0
+5 0 11062 5 0 0
+55 21 402507 29 0 0
+83 35 707493 56 0 0
+32 9 183769 13 0 0
+22 12 161292 14 0 0
+1 0 4993 1 0 0
+1 0 4993 1 0 0
+2 0 5241 2 0 0
+85 41 1579175 54 0 0
+74 17 273286 21 0 0
+49 17 327398 29 0 0
+31 9 1350436 18 0 0
+36 2 14356 4 0 0
+3 1 9036 3 0 0
+16 5 48264 6 0 0
+124 14 1341220 19 0 0
+2 0 9986 2 0 0
+0
+0
+0
+183
+0
+0
+0
+0
+0
+0
+0
+4
+52
+0
+0
+0
+0
+0
+0
+0
+39
+349
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+6
+0
+0
+0
+0
+0
+# -urls- 
+/public/documento/39
+0 1 0 37995 0 0 0 0
+/public/documento/33
+0 1 0 37502 0 1 0 0
+/public/documento/50
+0 1 0 38052 0 1 0 0
+/public/documento/25
+0 4 0 151060 0 1 0 0
+/public/documento/10
+0 1 0 37329 0 0 0 0
+/public/documento/52
+0 2 0 80873 0 1 0 0
+/public/_ignition/health-check
+0 4 0 2154 0 0 0 0
+/public/documento/21
+0 1 0 37392 0 1 0 0
+/public/documento/30
+0 1 0 37518 0 0 0 0
+/public/documento/47
+0 1 0 38028 0 1 0 0
+/public/
+0 57 0 332166 28 3 0 0
+/.env
+0 3 0 17756 0 0 0 0
+/public/documento/29
+0 2 0 80295 0 2 0 0
+/public/documento/42
+0 1 0 38023 0 0 0 0
+/public/documento/38
+0 1 0 38028 0 1 0 0
+/public/documento/40
+0 1 0 37512 0 0 0 0
+/public/documento/28
+0 2 0 75558 0 1 0 0
+/public/documento/46
+0 1 0 37515 0 1 0 0
+/public/documento/23
+0 1 0 37369 0 0 0 0
+/public/documento/44
+0 1 0 37494 0 1 0 0
+/public/documento/37
+0 1 0 38018 0 0 0 0
+/public/documento/41
+0 1 0 38036 0 1 0 0
+/public/documento/22
+0 2 0 74677 0 1 0 0
+/public/documento/51
+0 1 0 38019 0 0 0 0
+/public/documento/31
+0 1 0 37474 0 0 0 0
+/public/documento/27
+0 2 0 76070 0 1 0 0
+/public/listado-de-clientes
+0 77 0 278252 6 3 0 0
+/public/documento/34
+0 1 0 37976 0 1 0 0
+/public/documento/35
+0 1 0 38054 0 1 0 0
+/public/documento/45
+0 1 0 38043 0 1 0 0
+/public/documento/32
+0 1 0 37559 0 1 0 0
+/public/documento/49
+0 1 0 38092 0 0 0 0
+/public/documento/24
+0 2 0 80287 0 1 0 0
+/public/documento/36
+0 1 0 38032 0 1 0 0
+/public/documento/48
+0 1 0 38020 0 1 0 0
+/public/documento/43
+0 1 0 38048 0 0 0 0
+/public/documento/26
+0 1 0 37491 0 1 0 0
+# End Of Table - urls
+# -sites- (monthly)
+34.77.162.8
+0 2 0 5337 2 1634680293 0 0
+-
+92.118.160.1
+0 1 0 399 1 1634523826 0 0
+-
+92.118.160.5
+0 2 0 688 2 1634459182 0 0
+-
+34.96.130.21
+0 1 0 344 1 1634875143 0 0
+-
+86.127.237.186
+0 34 2 13668 1 1633377122 0 0
+/public/listado-de-clientes
+34.96.130.12
+0 1 0 399 1 1634690895 0 0
+-
+167.248.133.57
+0 4 0 10869 1 1634809524 0 0
+-
+34.86.35.30
+0 1 0 4993 1 1634080406 0 0
+-
+34.77.162.11
+0 1 0 4993 1 1634601550 0 0
+-
+27.124.127.178
+0 1 0 193 1 1633878309 0 0
+-
+92.118.160.41
+0 1 0 4993 1 1634473691 0 0
+-
+86.127.252.109
+0 34 2 14712 1 1633536792 0 0
+/public/listado-de-clientes
+34.96.130.15
+0 1 0 4993 1 1634329932 0 0
+-
+134.122.28.82
+0 1 0 193 1 1633887279 0 0
+-
+34.77.162.30
+0 1 0 344 1 1634079455 0 0
+-
+167.248.133.59
+0 4 0 10869 1 1634801713 0 0
+-
+34.86.35.25
+0 1 0 399 1 1634064668 0 0
+-
+34.86.35.20
+0 1 0 344 1 1634357415 0 0
+-
+86.127.235.118
+0 1 1 3699 1 1633640273 0 0
+/public/listado-de-clientes
+34.86.35.1
+0 1 0 344 1 1634677535 0 0
+-
+141.94.21.233
+0 1 0 193 1 1634479419 0 0
+-
+34.77.162.6
+0 1 0 4993 1 1634034096 0 0
+-
+34.77.162.7
+0 1 0 399 1 1634359032 0 0
+-
+34.77.162.19
+0 1 0 344 1 1633979390 0 0
+-
+67.205.61.254
+0 1 0 193 1 1634868497 0 0
+-
+139.99.122.69
+0 5 3 28328 1 1633901767 0 0
+-
+34.86.35.2
+0 1 0 4993 1 1634707283 0 0
+-
+188.26.215.91
+0 13 4 75729 1 1633770178 0 0
+/public/listado-de-clientes
+34.77.162.1
+0 1 0 4993 1 1634360728 0 0
+-
+188.26.223.90
+0 230 105 2896699 20 1633706170 0 0
+/public/documento/42
+34.96.130.26
+0 1 0 5048 1 1634049665 0 0
+-
+34.77.162.27
+0 1 0 344 1 1634280955 0 0
+-
+34.96.130.0
+0 1 0 4993 1 1634046987 0 0
+-
+167.248.133.58
+0 4 0 10995 1 1634809524 0 0
+-
+92.118.160.13
+0 1 0 5048 1 1634492581 0 0
+-
+167.94.138.41
+0 4 0 10979 1 1634835644 0 0
+-
+34.96.130.7
+0 1 0 5048 1 1634358524 0 0
+-
+5.45.207.136
+0 2 0 5952 1 1634658239 0 0
+-
+34.96.130.25
+0 1 0 4993 1 1634962218 0 0
+-
+78.30.23.217
+0 30 10 1316610 1 1633125813 0 0
+/public/listado-de-clientes
+92.118.160.9
+0 1 0 344 1 1634587220 0 0
+-
+92.118.160.45
+0 1 0 4993 1 1634442765 0 0
+-
+198.12.253.113
+0 1 0 193 1 1633621206 0 0
+-
+45.118.144.87
+0 1 0 193 1 1634466750 0 0
+-
+162.142.125.59
+0 4 0 10869 1 1634839614 0 0
+-
+86.127.239.216
+0 102 6 43514 1 1633473003 0 0
+/public/listado-de-clientes
+188.26.223.186
+0 46 16 1406432 4 1634927035 0 0
+/public/documento/52
+93.104.213.124
+0 1 0 193 1 1633763871 0 0
+-
+188.26.215.226
+0 81 34 525571 8 1634634050 0 0
+/public/listado-de-clientes
+# End Of Table - sites (monthly)
+# -sites- (daily)
+34.96.130.25
+0 1 0 4993 1 1634962218 0 0
+-
+# End Of Table - sites (daily)
+# -referrers- 
+https://jesus.ibanana.es/public/nuevo-pedidos
+0 1
+https://jesus.ibanana.es/public/listado-de-pedidos
+0 2
+- (Direct Request)
+0 278
+https://jesus.ibanana.es/public/
+0 202
+http://jesus.ibanana.es/public/
+0 18
+http://jesus.ibanana.es/public/listado-de-clientes
+0 19
+https://jesus.ibanana.es/public/listado-de-clientes
+0 110
+http://jesus.ibanana.es/
+0 1
+http://jesus.ibanana.es/public/nuevo-pedidos
+0 2
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15
+0 48
+Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)
+0 10
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36
+0 10
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36
+0 127
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36
+0 5
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36
+0 30
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36
+0 31
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+0 2
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Sa
+0 5
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 7
+Expanse indexes the network perimeters of our customers. If you have any questions or concerns, please reach out to: scaninfo
+0 21
+Safari/16612.1.29.41.4 CFNetwork/1240.0.4 Darwin/20.6.0
+0 160
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36
+0 154
+NetSystemsResearch studies the availability of various services across the internet. Our website is netsystemsresearch.com
+0 7
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)
+0 6
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
