@@ -146,7 +146,7 @@
                                 <td class="center-align">{{ $pre->movil }}</td>
                                 <td class="center-align">{{ $pre->producto }}</td>
                                 <td class="center-align">
-                                    <a href="{{ url('documento-presupuesto/' . $pre->id )}}" class="waves-effect waves-light btn teal darken-2"><i class="material-icons">remove_red_eye</i>
+                                    <a href="{{ url('documento-presupuesto/' . $pre->id )}}" class="waves-effect waves-light btn teal darken-2"><i class="material-icons">print</i>
                                     </a>
                                     <a href="{{ url('editar-presupuesto/' . $pre->id )}}" class="waves-effect waves-light btn green darken-2"><i class="material-icons">edit</i>
                                     </a>
@@ -167,7 +167,11 @@
             </div>
           </div>
       </div>
-
+      <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#000000" fill-opacity="1" d="M0,192L40,176C80,160,160,128,240,144C320,160,400,224,480,234.7C560,245,640,203,720,181.3C800,160,880,160,960,149.3C1040,139,1120,117,1200,112C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+        </svg>
+      </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

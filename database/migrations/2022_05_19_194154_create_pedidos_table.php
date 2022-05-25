@@ -19,6 +19,7 @@ class CreatePedidosTable extends Migration
             $table->string('unidad')->nullable();
             $table->string('marca');
             $table->string('modelo');
+            $table->string('estado')->default('0');
             $table->string('color')->nullable();
             $table->string('movil')->nullable();
             $table->string('fianza')->nullable();
