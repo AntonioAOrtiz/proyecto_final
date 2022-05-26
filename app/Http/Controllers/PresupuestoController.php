@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Presupuesto;
 use Illuminate\Http\Request;
 use DB;
 use Carbon\Carbon;
 use QrCode;
 use App\Http\Controllers\facturas;
 
-class presupuestos extends Controller
+class PresupuestoController extends Controller
 {
     public function index(Request $request)
     {

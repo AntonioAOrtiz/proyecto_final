@@ -57,66 +57,66 @@ Route::get('facturas', function (Request $request) {
 
 //Llamadas desde los Formularios
 //Reparaciones
-Route::post('dar-de-alta', 'clientes@index');
+Route::post('dar-de-alta', 'ClienteController@index');
 
-Route::get('listado-de-clientes', 'clientes@abiertas');
+Route::get('listado-de-clientes', 'ClienteController@abiertas');
 
 //Pedidos
-Route::post('pedir-pedido', 'pedidos@index');
+Route::post('pedir-pedido', 'PedidoController@index');
 
-Route::get('listado-de-pedidos', 'pedidos@listado_pedidos');
+Route::get('listado-de-pedidos', 'PedidoController@listado_pedidos');
 
 //Presupuestos
-Route::post('crear-presupuesto', 'presupuestos@index');
+Route::post('crear-presupuesto', 'PresupuestoController@index');
 
-Route::get('listado-de-presupuestos', 'presupuestos@listado_presupuestos');
+Route::get('listado-de-presupuestos', 'PresupuestoController@listado_presupuestos');
 
 //Facturas
-Route::post('crear-factura', 'facturas@index');
+Route::post('crear-factura', 'FacturaController@index');
 
-Route::get('listado-de-facturas', 'facturas@listado_facturas');
+Route::get('listado-de-facturas', 'FacturaController@listado_facturas');
 
-Route::get('enviar-factura', 'facturas@sendEmail');
+Route::get('enviar-factura', 'FacturaController@sendEmail');
 
 //Listado de Reparaciones
-Route::get('ver-todas-reparaciones', 'clientes@todas_las_reparaciones');
+Route::get('ver-todas-reparaciones', 'ClienteController@todas_las_reparaciones');
 
-Route::get('documento/{id}', 'clientes@ver');
+Route::get('documento/{id}', 'ClienteController@ver');
 
-Route::get('editar-reparacion/{id}', 'clientes@editar');
+Route::get('editar-reparacion/{id}', 'ClienteController@editar');
 
-Route::post('actualizar-reparacion', 'clientes@actualizar');
+Route::post('actualizar-reparacion', 'ClienteController@actualizar');
 
-Route::get('eliminar/{id}', 'clientes@eliminar');
+Route::get('eliminar/{id}', 'ClienteController@eliminar');
 
 //Listado de Pedidos
-Route::get('editar-pedido/{id}', 'pedidos@editar');
+Route::get('editar-pedido/{id}', 'PedidoController@editar');
 
-Route::post('actualizar-pedido', 'pedidos@actualizar');
+Route::post('actualizar-pedido', 'PedidoController@actualizar');
 
-Route::get('eliminar-pedido/{id}', 'pedidos@eliminar');
+Route::get('eliminar-pedido/{id}', 'PedidoController@eliminar');
 
 //Listado de Presupuestos
-Route::get('ver-todos-presupuestos', 'presupuestos@todos_los_presupuestos');
+Route::get('ver-todos-presupuestos', 'PresupuestoController@todos_los_presupuestos');
 
-Route::get('documento-presupuesto/{id}', 'presupuestos@ver_presupuesto');
+Route::get('documento-presupuesto/{id}', 'PresupuestoController@ver_presupuesto');
 
-Route::get('documento-factura-presupuesto/{id}', 'presupuestos@ver_factura');
+Route::get('documento-factura-presupuesto/{id}', 'PresupuestoController@ver_factura');
 
-Route::get('editar-presupuesto/{id}', 'presupuestos@editar');
+Route::get('editar-presupuesto/{id}', 'PresupuestoController@editar');
 
-Route::post('actualizar-presupuesto', 'presupuestos@actualizar');
+Route::post('actualizar-presupuesto', 'PresupuestoController@actualizar');
 
-Route::get('eliminar-presupuesto/{id}', 'presupuestos@eliminar');
+Route::get('eliminar-presupuesto/{id}', 'PresupuestoController@eliminar');
 
 //Listado de Facturas
-Route::get('documento-factura/{id}', 'facturas@ver_factura');
+Route::get('documento-factura/{id}', 'FacturaController@ver_factura');
 
-Route::get('editar-factura/{id}', 'facturas@editar');
+Route::get('editar-factura/{id}', 'FacturaController@editar');
 
-Route::post('actualizar-factura', 'facturas@actualizar');
+Route::post('actualizar-factura', 'FacturaController@actualizar');
 
-Route::get('eliminar-factura/{id}', 'facturas@eliminar');
+Route::get('eliminar-factura/{id}', 'FacturaController@eliminar');
 
 // Loguear usuario
 

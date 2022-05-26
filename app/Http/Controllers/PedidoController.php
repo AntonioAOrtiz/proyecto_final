@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Pedido;
 use Illuminate\Http\Request;
 use DB;
 use Carbon\Carbon;
 use QrCode;
 
-class pedidos extends Controller
+class PedidoController extends Controller
 {
     public function index(Request $request)
     {
