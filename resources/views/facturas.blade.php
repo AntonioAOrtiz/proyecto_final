@@ -5,7 +5,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/listados.css') }}">
     <title>iBanana - Factura</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,80 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <style type="text/css">
-    .maxheight64{
-        max-height: 52px;
-        padding-left: 0.4em;
-        padding-top: 0.4em;
-    }
-
-    .mt-2{
-        margin-top: 1em;
-    }
-
-    .m-0{
-        margin: 0;
-    }
-
-    .v0{
-        display: none;
-    }
-
-    @media only screen and (min-width: 993px){
-        .jc-bs3-container {
-        width: 50%;
-    }
-    }
-
-    * {
-        margin:0px;
-        padding:0px;
-        /*box-sizing: border-box;*/
-      }
-      
-      #header {
-        margin:auto;
-        width:500px;
-        font-family:Arial, Helvetica, sans-serif;
-      }
-      
-      ul, ol {
-        list-style:none;
-      }
-
-
-      
-      
-      .nav li ul {
-        display:none;
-        position:absolute;
-        min-width:140px;
-      }
-      
-      
-      
-      
-      
-      .nav li ul li ul {
-        text-align: center;
-        font-size:10px;
-        left:-140px;
-        top:0px;
-      }
-
-
-      .dropdown-menu{
-        margin-right: 35px;
-      }
-
-      nav .nav-wrapper ul li ul li a{
-        font-size: 14px;
-        color: white;
-      }
-      
-
-    </style>
 
   </head>
 
@@ -157,12 +84,12 @@
                 </div>
 
                 <div class="input-field col s6">
-                  <input id="dni" name="dni" type="text" required>
+                  <input id="dni" name="dni" type="text" maxlength="9" required>
                   <label for="dni">DNI</label>
                 </div>
 
                 <div class="input-field col s4">
-                  <input id="movil" name="movil" type="text">
+                  <input id="movil" name="movil" type="text" maxlength="9" required>
                   <label for="movil">Móvil</label>
                 </div>
 
@@ -198,7 +125,7 @@
                 </div>
 
                 <div class="input-field col s4">
-                  <input id="nserie" name="nserie" type="text">
+                  <input id="nserie" name="nserie" type="text" maxlength="16">
                   <label for="nserie">N.Serie</label>
                 </div>
 
@@ -208,17 +135,17 @@
                 </div>
 
                 <div class="input-field col s4">
-                  <input id="componente" name="componente" type="text" class="componente">
+                  <input id="componente" name="componente" type="text" class="componente" required>
                   <label for="componente">Componente</label>
                 </div>
 
                 <div class="input-field col s4">
-                  <input id="importe" name="importe" type="text" class="importe">
+                  <input id="importe" name="importe" type="text" class="importe" required>
                   <label for="importe">Importe</label>
                 </div>
 
                 <div class="input-field col s4">
-                  <input id="cantidad" name="cantidad" type="text" class="cantidad">
+                  <input id="cantidad" name="cantidad" type="text" class="cantidad" required>
                   <label for="cantidad">Cantidad</label>
                 </div>
 
@@ -256,88 +183,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript">
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/componentes.js') }}"></script>
 
-    M.AutoInit();
     
-      
-      var GuardarVal = function(){
-        let lstComp = document.getElementsByClassName("componente"), arrayComp = [];
-        let lstImp = document.getElementsByClassName("importe"), arrayImp = [];
-        let lstCant = document.getElementsByClassName("cantidad"), arrayCant = [];
-
-        let vCmp = document.createElement("div");
-        let vImp = document.createElement("div");
-        let vCnt = document.createElement("div");
-
-        vCmp.setAttribute("class","input-field col s4");
-        vImp.setAttribute("class","input-field col s4");
-        vCnt.setAttribute("class","input-field col s4");
-
-        vCmp.innerHTML='<textarea id="vC" name="vC" class="materialize-textarea" hidden="hidden"></textarea>';
-        vImp.innerHTML='<textarea id="vI" name="vI" class="materialize-textarea" hidden="hidden"></textarea>';
-        vCnt.innerHTML='<textarea id="vCn" name="vCn" class="materialize-textarea" hidden="hidden"></textarea>';
-
-        document.getElementById("caja_valor").appendChild(vCmp);
-        document.getElementById("caja_valor").appendChild(vImp);
-        document.getElementById("caja_valor").appendChild(vCnt);
-
-        for (var i = 0; i < lstComp.length; i++)
-        {
-          arrayComp[i] = lstComp[i].value;
-
-          console.log (lstComp[i].value);
-          document.getElementById("vC").innerHTML += lstComp[i].value + "/";
-        }
-
-        for (var i = 0; i < lstImp.length; i++)
-        {
-          arrayImp[i] = lstImp[i].value;
-
-          console.log (lstImp[i].value);
-          document.getElementById("vI").innerHTML += lstImp[i].value + "/";
-        }
-
-        for (var i = 0; i < lstCant.length; i++)
-        {
-          arrayCant[i] = lstCant[i].value;
-
-          console.log (lstCant[i].value);     
-          document.getElementById("vCn").innerHTML += lstCant[i].value + "/";
-        }      
-      }
-
-      //Función para crear nuevos campos de componente, importe, cantidad en el formulario.
-      function nuevoComponente()
-      {
-        let nuevoComp = document.createElement("div");
-        nuevoComp.setAttribute("class","input-field col s4");
-        nuevoComp.innerHTML='<input name="componente[]" type="text" class="componente"/> <label for="componente">Componente</label>';
-        document.getElementById("lst_comp").appendChild(nuevoComp);
-
-        let nuevoImporte = document.createElement("div");
-        nuevoImporte.setAttribute("class","input-field col s4");
-        nuevoImporte.innerHTML='<input name="importe[]" type="text" class="importe"/> <label for="importe">Importe</label>';
-        document.getElementById("lst_comp").appendChild(nuevoImporte);
-
-        let nuevaCantidad = document.createElement("div");
-        nuevaCantidad.setAttribute("class","input-field col s4");
-        nuevaCantidad.innerHTML='<input name="cantidad[]" type="text" class="cantidad"/> <label for="cantidad">Cantidad</label>';
-        document.getElementById("lst_comp").appendChild(nuevaCantidad);
-      }
-    </script>
-
-    <script>
-      M.AutoInit();
-
-      $('.dropdown-trigger').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrain_width: false, // Does not change width of dropdown to that of the activator
-        hover: true,
-        belowOrigin: true,
-        alignment: 'left'
-      });
-    </script>
   </body>
 </html>

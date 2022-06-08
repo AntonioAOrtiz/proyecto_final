@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>iBanana - Nuevo Pedido</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,32 +28,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <style type="text/css">
-    .maxheight64{
-        max-height: 52px;
-        padding-left: 0.4em;
-        padding-top: 0.4em;
-    }
-
-    .mt-2{
-        margin-top: 1em;
-    }
-
-    .m-0{
-        margin: 0;
-    }
-
-    .dropdown-menu{
-        margin-right: 35px;
-      }
-
-    nav .nav-wrapper ul li ul li a{
-      font-size: 14px;
-      color: white;
-    }
-
-    </style>
-
+    
   </head>
 
   <body>
@@ -107,27 +82,27 @@
                         </div>
 
                         <div class="input-field col s4">
-                            <input id="unidad" name="unidad" type="text">
+                            <input id="unidad" name="unidad" type="text" required>
                             <label for="unidad">Unidades</label>
                         </div>
 
                         <div class="input-field col s4">
-                            <input id="componente" name="componente" type="text">
+                            <input id="componente" name="componente" type="text" required>
                             <label for="componente">Componente</label>
                         </div>
 
                         <div class="input-field col s4">
-                          <input id="marca" name="marca" type="text">
+                          <input id="marca" name="marca" type="text" required>
                           <label for="marca">Marca</label>
                         </div>
 
                         <div class="input-field col s4">
-                            <input id="modelo" name="modelo" type="text">
+                            <input id="modelo" name="modelo" type="text" required>
                             <label for="modelo">Modelo</label>
                           </div>
 
                           <div class="input-field col s4">
-                            <input id="movil" name="movil" type="text">
+                            <input id="movil" name="movil" type="text" maxlength="9">
                             <label for="movil">Tlf Cliente</label>
                           </div>
 
@@ -166,21 +141,9 @@
       </footer>
     <!--Importe de JQuery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
+    <!--JavaScript al final para optimizar la carga-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script>
-      M.AutoInit();
-
-      $('.dropdown-trigger').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrain_width: false, // Does not change width of dropdown to that of the activator
-        hover: true,
-        belowOrigin: true,
-        alignment: 'left'
-      });
-    </script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
   </body>
 </html>

@@ -193,13 +193,13 @@
 
                             @foreach($array_componentes as $componente)
                               <div class="input-field col s4">
-                                <input id="componente" name="componente" type="text" value="{{ $componente }}" class="componente">
+                                <input id="componente" name="componente" type="text" value="{{ $componente }}" class="componente" required>
                                 <label for="componente">Componente</label>
                               </div>
                               @foreach($array_importes as $importe)
                                 @if($contador_importe == $contador_componente)
                                   <div class="input-field col s4">
-                                    <input id="importe" name="importe" type="text" value="{{ $importe }}" class="importe">
+                                    <input id="importe" name="importe" type="text" value="{{ $importe }}" class="importe" required>
                                     <label for="importe">Importe</label>
                                   </div>
                                 @endif  
@@ -208,7 +208,7 @@
                               @foreach($array_cantidades as $cantidad)
                                 @if($contador_cantidad == $contador_componente)
                                   <div class="input-field col s4">
-                                    <input id="cantidad" name="cantidad" type="text" value="{{ $cantidad }}" class="cantidad">
+                                    <input id="cantidad" name="cantidad" type="text" value="{{ $cantidad }}" class="cantidad" required>
                                     <label for="cantidad">Cantidad</label>
                                   </div>
                                 @endif
@@ -254,99 +254,13 @@
         </svg>
       </footer>
 <!--Importe de JQuery-->
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/componentes.js') }}"></script>                       
 
-<script type="text/javascript">
 
-    M.AutoInit();
     
-      
-      var GuardarVal = function(){
-        let lstComp = document.getElementsByClassName("componente"), arrayComp = [];
-        let lstImp = document.getElementsByClassName("importe"), arrayImp = [];
-        let lstCant = document.getElementsByClassName("cantidad"), arrayCant = [];
-
-        let vCmp = document.createElement("div");
-        let vImp = document.createElement("div");
-        let vCnt = document.createElement("div");
-
-        vCmp.setAttribute("class","input-field col s4");
-        vImp.setAttribute("class","input-field col s4");
-        vCnt.setAttribute("class","input-field col s4");
-
-        vCmp.innerHTML='<textarea id="vC" name="vC" class="materialize-textarea" hidden="hidden"></textarea>';
-        vImp.innerHTML='<textarea id="vI" name="vI" class="materialize-textarea" hidden="hidden"></textarea>';
-        vCnt.innerHTML='<textarea id="vCn" name="vCn" class="materialize-textarea" hidden="hidden"></textarea>';
-
-        document.getElementById("caja_valor").appendChild(vCmp);
-        document.getElementById("caja_valor").appendChild(vImp);
-        document.getElementById("caja_valor").appendChild(vCnt);
-
-        for (var i = 0; i < lstComp.length; i++)
-        {
-          arrayComp[i] = lstComp[i].value;
-
-          console.log (lstComp[i].value);
-          if(lstComp[i].value != ""){
-          document.getElementById("vC").innerHTML += lstComp[i].value + "/";
-          }
-        }
-
-        for (var i = 0; i < lstImp.length; i++)
-        {
-          arrayImp[i] = lstImp[i].value;
-
-          console.log (lstImp[i].value);
-          if(lstComp[i].value != ""){
-          document.getElementById("vI").innerHTML += lstImp[i].value + "/";
-          }
-        }
-
-        for (var i = 0; i < lstCant.length; i++)
-        {
-          arrayCant[i] = lstCant[i].value;
-
-          console.log (lstCant[i].value); 
-          if(lstComp[i].value != ""){    
-          document.getElementById("vCn").innerHTML += lstCant[i].value + "/";
-          }
-        }      
-      }
-</script>
-
-<script>
-    function nuevoComponente()
-      {
-        let nuevoComp = document.createElement("div");
-        nuevoComp.setAttribute("class","input-field col s4");
-        nuevoComp.innerHTML='<input name="componente[]" type="text" class="componente"/> <label for="componente">Componente</label>';
-        document.getElementById("lst_comp").appendChild(nuevoComp);
-
-        let nuevoImporte = document.createElement("div");
-        nuevoImporte.setAttribute("class","input-field col s4");
-        nuevoImporte.innerHTML='<input name="importe[]" type="text" class="importe"/> <label for="importe">Importe</label>';
-        document.getElementById("lst_comp").appendChild(nuevoImporte);
-
-        let nuevaCantidad = document.createElement("div");
-        nuevaCantidad.setAttribute("class","input-field col s4");
-        nuevaCantidad.innerHTML='<input name="cantidad[]" type="text" class="cantidad"/> <label for="cantidad">Cantidad</label>';
-        document.getElementById("lst_comp").appendChild(nuevaCantidad);
-      }
-  </script>
-
-    <script>
-      M.AutoInit();
-
-      $('.dropdown-trigger').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrain_width: false, // Does not change width of dropdown to that of the activator
-        hover: true,
-        belowOrigin: true,
-        alignment: 'left'
-      });
-    </script>
   </body>
 </html>

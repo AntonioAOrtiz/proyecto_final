@@ -1,0 +1,28 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+
+.maxheight64{
+    max-height: 52px;
+    padding-left: 0.4em;
+    padding-top: 0.4em;
+}
+
+.mt-2{
+    margin-top: 1em;
+}
+
+.m-0{
+    margin: 0;
+}
+
+.dropdown-menu{
+    margin-right: 35px;
+  }
+
+nav .nav-wrapper ul li ul li a{
+  font-size: 14px;
+  color: white;
+}

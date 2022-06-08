@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePresupuestosTable extends Migration
+class CreateFacturasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreatePresupuestosTable extends Migration
      */
     public function up()
     {
-        Schema::create('presupuestos', function (Blueprint $table) {
+        Schema::create('facturas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            //$table->unsignedBigInteger('cliente_id');
+            //$table->unsignedBigInteger('presupuesto_id');
             $table->string('nombre');
             $table->string('dni');
             $table->string('movil');
@@ -28,6 +30,8 @@ class CreatePresupuestosTable extends Migration
             $table->string('componente');
             $table->string('importe');
             $table->string('cantidad');
+            //$table->foreign('cliente_id')->references('id')->on('clientes');
+            //$table->foreign('presupuesto_id')->references('id')->on('presupuestos');
             $table->timestamps();
         });
     }
@@ -39,6 +43,6 @@ class CreatePresupuestosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('presupuestos');
+        Schema::dropIfExists('facturas');
     }
 }

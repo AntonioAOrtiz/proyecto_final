@@ -13,7 +13,7 @@ class UsuariosTableSeeder extends Seeder
     {
         DB::table('usuarios')->insert([
             'usuario' => 'administrador',
-            'password' => '1234',
+            
         ]);
     }
 }

@@ -15,6 +15,8 @@ class CreateReparablesTable extends Migration
     {
         Schema::create('reparables', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('cliente_id');
+            $table->unsignedBigInteger('pedido_id');
             $table->string('producto')->nullable();
             $table->string('estado')->default('0');
             $table->string('marca')->nullable();
@@ -26,6 +28,8 @@ class CreateReparablesTable extends Migration
             $table->string('presupuesto')->nullable();
             $table->text('averia_reportada')->nullable();
             $table->text('cierre_averia')->nullable();
+            $table->foreign('cliente_id')->references('id')->on('clientes');
+            $table->foreign('pedido_id')->references('id')->on('pedidos');
             $table->timestamp('fecha_cierre', 0)->nullable();
             $table->timestamps();
         });

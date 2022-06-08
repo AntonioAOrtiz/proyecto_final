@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Hoja de reparación {{ $hoja->id }}</title>
-
+		<!-- Estilos en línea necesarios para que puedan ser procesados por DomPDF -->
 		<style>
 			.invoice-box {
 				max-width: 800px;
@@ -200,7 +200,7 @@
 					<td>Condiciones del Servicio (Leer atentamente).</td>
 
 				</tr>
-</table></td>
+</table>
 <div class="condiciones">
 
 <b>1. No nos hacemos responsable de los datos que contengan el móvil, recomendamos que haga una copia de seguridad antes de dejar su terminal para la reparación.<br></b>
@@ -212,9 +212,8 @@
 <b>3. Todas las reparaciones están garantizadas por tres meses de garantía, POR LA MISMA AVERÍA.<br></b>
 <b>4. No recogemos teléfonos en garantía sin la correspondiente Factura.<br></b>
 <b>5. No nos hacemos responsable de ninguna tarjeta que pueda traer el terminal.<br></b>
-<b>6. El usuario quedara obligado al pago por la elaboración del presupuesto cuando habiéndolo solicitado, no fuera aceptado. 10€<br></b>
-<b>7. Para recoger el terminal es obligatorio presentar la orden de reparación o D.N.I<br></b>
-<b>8. No nos hacemos responsables de terminales dadas de baja en la red móvil.<br></b>
+<b>6. Para recoger el terminal es obligatorio presentar la orden de reparación o D.N.I<br></b>
+
 <b>INFORMACIÓN Y CONSENTIMIENTO DE TRATAMIENTO DE DATOS PERSONALES DE CLIENTES<br></b> 
 ANA ISABEL OJEDA QUIÑONES CIF/NIF 75770341S responsable del tratamiento informa, de
 conformidad con lo establecido en el REGLAMENTO (UE) 2016/679 y la Ley Orgánica 3/2018 de
@@ -239,16 +238,15 @@ Marque si presta su consentimiento expreso para:<br>
 		</table>
 		
 			<table cellpadding="0" cellspacing="0">
-								<tr class="information">
+				<tr class="information">
 					<td colspan="2">
 						<table>
 							<tr>
-								<td>
-								Sello Empresa:	</td>					
+								<td>Sello Empresa</td>					
 									<img src="{{ public_path('sello.png') }}" style="width: 140%; max-width: 140px" />
 								
 								<td class="firma_cliente">
-								Firma Cliente:
+								Firma Cliente
 								</td>
 							</tr>
 						</table>

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/listados.css') }}">
     <title>iBanana - Listado de reparaciones</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -32,42 +33,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <style type="text/css">
-    .maxheight64{
-        max-height: 52px;
-        padding-left: 0.4em;
-        padding-top: 0.4em;
-    }
-
-    .mt-2{
-        margin-top: 1em;
-    }
-
-    .m-0{
-        margin: 0;
-    }
-
-    .v0{
-        display: none;
-    }
-
-    .dropdown-menu{
-        margin-right: 35px;
-      }
-
-    nav .nav-wrapper ul li ul li a{
-      font-size: 14px;
-      color: white;
-    }
-
-    @media only screen and (min-width: 993px){
-        .jc-bs3-container {
-        width: 30%;
-    }
-    }
-
-    </style>
-
+    
   </head>
 
   <body>
@@ -190,39 +156,28 @@
     
     <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-
-<script type="text/javascript">
-
-M.AutoInit();
-
-$(document).ready(function() {
-    $('.clientes').DataTable({
-        language: {
-            url: '//cdn.datatables.net/plug-ins/1.11.2/i18n/es_es.json'
-        }
-    });
-
-        @if(strlen($mensaje) > 0)
-        $.alert({
-        title: 'Parte de reparación creado!',
-        content: 'El número de orden es {{ $mensaje }}' ,
+    <script src="{{ asset('js/app.js') }}"></script>
+    
+    <!--Script necesario en línea de funciones jquery-->
+    <script type="text/javascript">
+    // LLamada a tabla dinámica Datatables para las reparaciones.
+      $(document).ready(function() {
+        $('.clientes').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.11.2/i18n/es_es.json'
+            }
         });
-        @endif
+          // Cuando se crea una nueva reparación se muestra un mensaje dinámico de pedido creado con su número de orden
+            @if(strlen($mensaje) > 0)
+            $.alert({
+            title: 'Parte de reparación creado!',
+            content: 'El número de orden es {{ $mensaje }}' ,
+            });
+            @endif
 
-} );
+    } );
 
-</script>
-<script>
-      M.AutoInit();
-
-      $('.dropdown-trigger').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrain_width: false, // Does not change width of dropdown to that of the activator
-        hover: true,
-        belowOrigin: true,
-        alignment: 'left'
-      });
     </script>
+
   </body>
 </html>

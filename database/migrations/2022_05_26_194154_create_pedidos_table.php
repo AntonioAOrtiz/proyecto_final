@@ -15,6 +15,7 @@ class CreatePedidosTable extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            //$table->unsignedBigInteger('cliente_id');
             $table->string('componente');
             $table->string('unidad')->nullable();
             $table->string('marca');
@@ -24,6 +25,7 @@ class CreatePedidosTable extends Migration
             $table->string('movil')->nullable();
             $table->string('fianza')->nullable();
             $table->string('precio_final')->nullable();
+            //$table->foreign('cliente_id')->references('id')->on('clientes');
             $table->timestamps();
         });
     }

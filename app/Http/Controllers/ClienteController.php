@@ -133,7 +133,7 @@ class ClienteController extends Controller
 
         $pdf->loadView('recibo', compact('hoja','fecha'));
 
-        return $pdf->download('hoja-de-reparacion-' . $id . '.pdf');
+        return $pdf->stream('hoja-de-reparacion-' . $id . '.pdf');
     }
 
     public function editar($id)
@@ -184,7 +184,7 @@ class ClienteController extends Controller
 
             $comandas = DB::table('usuarios')
             ->where('usuario',$request->input('usuario'))
-            ->where('password',$request->input('password'))/*crypt($request->input('password'), 'sffffff%%%32ssss8373!'))*/
+            ->where('password',crypt($request->input('password'), 'sffffff%%%32ssss8373!'))
             ->first();
         
             if($comandas){

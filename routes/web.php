@@ -122,9 +122,11 @@ Route::get('eliminar-factura/{id}', 'FacturaController@eliminar');
 
 Route::get('comprobar-usuario', function (Request $request) {
 
+    
+
     $comandas = DB::table('usuarios')
     ->where('usuario',$request->input('usuario'))
-    ->where('password',$request->input('password'))/*crypt($request->input('password'), 'sffffff%%%32ssss8373!'))*/
+    ->where('password',$request->input('password'))
     ->first();
 
     if($comandas){
