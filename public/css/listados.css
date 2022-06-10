@@ -1,9 +1,9 @@
 
-
+    /* No se muestra el código qr*/
     .v0{
         display: none;
     }
-
+    /* Responsive de listados*/
      @media only screen and (min-width: 993px){
         .jc-bs3-container {
         width: 50%;

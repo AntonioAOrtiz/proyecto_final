@@ -179,32 +179,7 @@ class ClienteController extends Controller
         return redirect('listado-de-clientes');
     }
 
-    public function login()
-    {
-
-            $comandas = DB::table('usuarios')
-            ->where('usuario',$request->input('usuario'))
-            ->where('password',crypt($request->input('password'), 'sffffff%%%32ssss8373!'))
-            ->first();
-        
-            if($comandas){
-        
-                if($request->input('usuario') == 'administrador'){
-                    session(['permiso' => '1']);
-                    session(['usuario' => 'administrador']);
-        
-                    DB::table('ENTRADAS')->insert([
-                        'PERSONA' => 'administrador'
-                    ]);
-        
-                    return redirect('cierre');
-                }
-        
-            }else{
-                return redirect('login');
-            };
-
-    }
+    
 
 
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Factura {{ $hoja_presupuesto->id }}</title>
     
-    <!-- Estilos en líneas necesarios para que los procese DomPDF -->
+    <!-- Estilos en línea necesarios para que los procese DomPDF -->
     <style>
     
         body{
