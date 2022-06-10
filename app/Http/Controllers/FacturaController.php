@@ -72,7 +72,7 @@ class FacturaController extends Controller
 
         $pdf->loadView('factura_pdf', compact('hoja_factura','fecha'));
 
-        return $pdf->download('hoja-de-factura-' . $id . '.pdf');
+        return $pdf->stream('hoja-de-factura-' . $id . '.pdf');
     }
 
     public function editar($id)

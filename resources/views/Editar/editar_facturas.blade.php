@@ -5,7 +5,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Importe materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/listados.css') }}">
     <title>iBanana - Editar Factura</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,32 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <style type="text/css">
-    .maxheight64{
-        max-height: 52px;
-        padding-left: 0.4em;
-        padding-top: 0.4em;
-    }
-
-    .mt-2{
-        margin-top: 1em;
-    }
-
-    .m-0{
-        margin: 0;
-    }
-
-    .dropdown-menu{
-        margin-right: 35px;
-      }
-
-    nav .nav-wrapper ul li ul li a{
-      font-size: 14px;
-      color: white;
-    }
-
-    </style>
 
   </head>
 
@@ -95,7 +70,7 @@
             <div class="col s12">
                 <div class="row">
 
-                    <form action="{{ url('actualizar-factura') }}" method="post" class="col s12">
+                    <form id="factura" action="{{ url('actualizar-factura') }}" method="post" class="col s12">
                     @csrf
 
                       <input hidden name="id" value="{{ $facturas->id }}">
@@ -193,13 +168,13 @@
                           
                         @foreach($array_componentes as $componente)
                           <div class="input-field col s4">
-                            <input id="componente" name="componente" type="text" value="{{ $componente }}" class="componente" required>
+                            <input id="componente" name="componente" type="text" value="{{ $componente }}" class="componente">
                             <label for="componente">Componente</label>
                           </div>
                           @foreach($array_importes as $importe)
                             @if($contador_importe == $contador_componente)
                               <div class="input-field col s4">
-                                <input id="importe" name="importe" type="text"  value="{{ $importe }}" class="importe" required>
+                                <input id="importe" name="importe" type="text"  value="{{ $importe }}" class="importe">
                                 <label for="importe">Importe</label>
                               </div>
                             @endif  
@@ -208,7 +183,7 @@
                           @foreach($array_cantidades as $cantidad)
                             @if($contador_cantidad == $contador_componente)
                               <div class="input-field col s4">
-                                <input id="cantidad" name="cantidad" type="text" value="{{ $cantidad }}" class="cantidad" required>
+                                <input id="cantidad" name="cantidad" type="text" value="{{ $cantidad }}" class="cantidad">
                                 <label for="cantidad">Cantidad</label>
                               </div>
                             @endif
@@ -225,8 +200,9 @@
                             <button type="button" id="boton" onClick="nuevoComponente()">Nuevo Componente</button>
                           </div>
 
-                          <div class="input-field col s4">
+                          <div id="cajaGuardar" class="input-field col s4">
                           <button type="button" value="Capturar" onclick="GuardarVal()">Guardar Componentes</button>
+                          <span> Es obligatorio guardar los componentes solo una vez antes de actualizar la factura</span>
                           </div>
 
                           <div id="caja_valor"></div>
@@ -256,6 +232,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/componentes.js') }}"></script>                       
-  
+    <script src="{{ asset('js/validaFactura.js') }}"></script>
+
   </body>
 </html>

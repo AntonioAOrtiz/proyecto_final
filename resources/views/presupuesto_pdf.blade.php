@@ -36,7 +36,7 @@
         }
 
         .derecha table.info_importe{
-            width: 60%;
+            width: 100%;
             border-collapse: collapse;
             vertical-align: middle;
             margin-bottom: 40px;

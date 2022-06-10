@@ -26,3 +26,13 @@ nav .nav-wrapper ul li ul li a{
   font-size: 14px;
   color: white;
 }
+
+span{
+  color: red;
+}
+
+#cajaGuardar{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}

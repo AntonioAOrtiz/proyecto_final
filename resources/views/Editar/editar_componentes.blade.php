@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Import Google Icon Font-->
+    <!--Importe de Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+    <!--Importe de materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/listados.css') }}">
     <title>iBanana - Editar Pedido</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -27,32 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <style type="text/css">
-    .maxheight64{
-        max-height: 52px;
-        padding-left: 0.4em;
-        padding-top: 0.4em;
-    }
-
-    .mt-2{
-        margin-top: 1em;
-    }
-
-    .m-0{
-        margin: 0;
-    }
-
-    .dropdown-menu{
-        margin-right: 35px;
-      }
-
-    nav .nav-wrapper ul li ul li a{
-      font-size: 14px;
-      color: white;
-    }
-
-    </style>
 
   </head>
 
@@ -182,7 +157,7 @@
     <!--JavaScript al final del body para optimizar la carga-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    
+    <script src="{{ asset('js/validaPedido.js') }}"></script>
 
   </body>
 </html>

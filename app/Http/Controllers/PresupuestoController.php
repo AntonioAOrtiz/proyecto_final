@@ -95,7 +95,7 @@ class PresupuestoController extends Controller
         $pdf->loadView('presupuesto_pdf', compact('hoja_presupuesto','fecha'));
 
 
-        return $pdf->download('hoja-de-presupuesto-' . $id . '.pdf');
+        return $pdf->stream('hoja-de-presupuesto-' . $id . '.pdf');
     }
 
     public function ver_factura($id)

@@ -71,7 +71,7 @@
             <div class="col s12">
                 <div class="row">
 
-                    <form action="{{ url('dar-de-alta') }}" method="post" class="col s12">
+                    <form id="reparacion" action="{{ url('dar-de-alta') }}" method="post" class="col s12">
                     @csrf
 
                       <div class="row">
@@ -145,7 +145,7 @@
                             <label for="averia_report">Avería reportada</label>
                           </div>
                           <div class="input-field col s4">
-                            <input id="email" name="presupuesto" type="text">
+                            <input id="presupuesto" name="presupuesto" type="text">
                             <label for="presupuesto">Presupuesto</label>
                           </div>
 
@@ -172,7 +172,7 @@
     <!--JavaScript al final del body para optimizar la carga-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
-    
+    <script src="{{ asset('js/validaReparacion.js') }}"></script>
     
     
   </body>

@@ -68,7 +68,7 @@
       <div class="row mt-2">
         <div class="col s12">
           <div class="row">
-            <form action="{{ url('crear-factura') }}" method="post" class="col s12">
+            <form id="factura" action="{{ url('crear-factura') }}" method="post" class="col s12">
               @csrf
 
               <div class="row">
@@ -155,8 +155,9 @@
                   <button type="button" id="boton" onClick="nuevoComponente()">Nuevo Componente</button>
                 </div>
 
-                <div class="input-field col s4">
+                <div id="cajaGuardar" class="input-field col s4">
                   <button type="button" value="Capturar" onclick="GuardarVal()">Guardar Componentes</button>
+                  <span> Es obligatorio guardar los componentes solo una vez antes de crear la factura</span>
                 </div>
 
                 <div id="caja_valor"></div>
@@ -185,6 +186,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/componentes.js') }}"></script>
+    <script src="{{ asset('js/validaFactura.js') }}"></script>
 
     
   </body>

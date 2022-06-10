@@ -72,19 +72,6 @@
             float:right;
         }
 
-        /*.invoice-box .derecha table.info_importe tr td{
-            
-            border-style: dotted;
-        }
-
-        .invoice-box .derecha table.info_importe tr td:first-child{
-            border-left: 0px solid;
-        }
-        
-        .invoice-box .derecha table.info_importe tr td:last-child{
-            border-right: 0px solid;
-        }*/
-
         
 
     </style>

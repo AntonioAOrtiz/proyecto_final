@@ -70,7 +70,7 @@
             <div class="col s12">
                 <div class="row">
 
-                    <form action="{{ url('pedir-pedido') }}" method="post" class="col s12">
+                    <form id="pedido" action="{{ url('pedir-pedido') }}" method="post" class="col s12">
                     @csrf
 
                       <div class="row">
@@ -144,6 +144,7 @@
     <!--JavaScript al final para optimizar la carga-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/validaPedido.js') }}"></script>
 
   </body>
 </html>
